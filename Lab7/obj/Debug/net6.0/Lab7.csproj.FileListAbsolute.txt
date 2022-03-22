@@ -1,0 +1,15 @@
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\bin\Debug\net6.0\Lab7.exe
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\bin\Debug\net6.0\Lab7.deps.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\bin\Debug\net6.0\Lab7.runtimeconfig.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\bin\Debug\net6.0\Lab7.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\bin\Debug\net6.0\ref\Lab7.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\bin\Debug\net6.0\Lab7.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\obj\Debug\net6.0\Lab7.csproj.AssemblyReference.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\obj\Debug\net6.0\Lab7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\obj\Debug\net6.0\Lab7.AssemblyInfoInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\obj\Debug\net6.0\Lab7.AssemblyInfo.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\obj\Debug\net6.0\Lab7.csproj.CoreCompileInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\obj\Debug\net6.0\Lab7.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\obj\Debug\net6.0\ref\Lab7.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\obj\Debug\net6.0\Lab7.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7\obj\Debug\net6.0\Lab7.genruntimeconfig.cache

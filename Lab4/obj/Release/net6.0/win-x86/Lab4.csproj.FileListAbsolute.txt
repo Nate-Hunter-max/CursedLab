@@ -1,0 +1,15 @@
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\win-x86\Lab4.exe
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\win-x86\Lab4.deps.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\win-x86\Lab4.runtimeconfig.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\win-x86\Lab4.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\win-x86\ref\Lab4.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\win-x86\Lab4.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\obj\Release\net6.0\win-x86\Lab4.csproj.AssemblyReference.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\obj\Release\net6.0\win-x86\Lab4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\obj\Release\net6.0\win-x86\Lab4.AssemblyInfoInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\obj\Release\net6.0\win-x86\Lab4.AssemblyInfo.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\obj\Release\net6.0\win-x86\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\obj\Release\net6.0\win-x86\Lab4.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\obj\Release\net6.0\win-x86\ref\Lab4.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\obj\Release\net6.0\win-x86\Lab4.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\obj\Release\net6.0\win-x86\Lab4.genruntimeconfig.cache

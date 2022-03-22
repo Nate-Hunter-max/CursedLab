@@ -1,0 +1,15 @@
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\bin\Debug\net6.0\Lab7_v.14.exe
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\bin\Debug\net6.0\Lab7_v.14.deps.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\bin\Debug\net6.0\Lab7_v.14.runtimeconfig.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\bin\Debug\net6.0\Lab7_v.14.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\bin\Debug\net6.0\ref\Lab7_v.14.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\bin\Debug\net6.0\Lab7_v.14.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\obj\Debug\net6.0\Lab7_v.14.csproj.AssemblyReference.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\obj\Debug\net6.0\Lab7_v.14.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\obj\Debug\net6.0\Lab7_v.14.AssemblyInfoInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\obj\Debug\net6.0\Lab7_v.14.AssemblyInfo.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\obj\Debug\net6.0\Lab7_v.14.csproj.CoreCompileInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\obj\Debug\net6.0\Lab7_v.14.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\obj\Debug\net6.0\ref\Lab7_v.14.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\obj\Debug\net6.0\Lab7_v.14.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab7_v.14\obj\Debug\net6.0\Lab7_v.14.genruntimeconfig.cache

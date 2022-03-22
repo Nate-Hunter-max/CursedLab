@@ -1,0 +1,7 @@
+C:\Users\oppp0\OneDrive\Рабочий стол\1\Deleter.exe
+C:\Users\oppp0\OneDrive\Рабочий стол\1\Deleter.dll
+C:\Users\oppp0\OneDrive\Рабочий стол\1\Deleter.deps.json
+C:\Users\oppp0\OneDrive\Рабочий стол\1\Deleter.runtimeconfig.json
+C:\Users\oppp0\OneDrive\Рабочий стол\1\Deleter.pdb
+C:\Users\oppp0\OneDrive\Рабочий стол\1\Microsoft.WindowsAPICodePack.dll
+C:\Users\oppp0\OneDrive\Рабочий стол\1\Microsoft.WindowsAPICodePack.Shell.dll

@@ -1,0 +1,21 @@
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\bin\Release\net6.0-windows\Curse Lab.exe
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\bin\Release\net6.0-windows\Curse Lab.deps.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\bin\Release\net6.0-windows\Curse Lab.runtimeconfig.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\bin\Release\net6.0-windows\Curse Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\bin\Release\net6.0-windows\Curse Lab.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab.csproj.AssemblyReference.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\MainWindow.g.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\App.g.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab_MarkupCompile.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab_MarkupCompile.lref
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\MainWindow.baml
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab.g.resources
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab.AssemblyInfoInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab.AssemblyInfo.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab.csproj.CoreCompileInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\refint\Curse Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\Curse Lab.genruntimeconfig.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Release\net6.0-windows\ref\Curse Lab.dll
