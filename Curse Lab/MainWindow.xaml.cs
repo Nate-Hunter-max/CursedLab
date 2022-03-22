@@ -39,64 +39,68 @@ namespace Curse_Lab
 
         }
 
-        public class FuckingSquare
+        public class LatinRectangle
         {
-            readonly int _order;
+            readonly int orderX;
+            readonly int orderY;
+            readonly int orderMax;
 
-            int[,] square;
-            char[,] formatedSquare;
+
+            int[,] latinRect;
+            char[,] formatedRect;
             char[] customMap;
 
-            public FuckingSquare(int n)
+            public LatinRectangle(int orderX, int orderY)
             {
-                _order = n;
-                square = new int[n, n];
-                formatedSquare = new char[n, n];
-                customMap = new char[n];
-                for (int i = 0; i < n; i++) customMap[i] = (char)(i + 1);
+                this.orderX = orderX;
+                this.orderY = orderY;
+                latinRect = new int[orderY, orderX];
+                formatedRect = new char[orderY, orderX];
+                orderMax = orderX >= orderY ? orderX : orderY;
+                customMap = new char[orderMax];
+                for (int i = 0; i < orderMax; i++) customMap[i] = (char)(i + 1);
             }
-            public FuckingSquare(int n, char[] customMap) : this(n)
+            public LatinRectangle(int orderX, int orderY, char[] customMap) : this(orderX, orderY)
             {
                 this.customMap = customMap;
             }
-
-            public void FuckFromString(string str)
+            public void RectFromString(string str)
             {
                 str = Regex.Replace(str, @"\D+", "");
                 var list = new List<int>();
                 foreach (char c in str) list.Add(int.Parse(c.ToString()));
-                FuckFromList(list);
+                RectFromList(list);
             }
 
-            public void FuckFromList(in List<int> lst)
+            public void RectFromList(in List<int> lst)
             {
                 int index = 0;
-                for (int i = 0; i < _order; i++)
+                for (int i = 0; i < orderY; i++)
                 {
-                    for (int k = 0; k < _order; k++)
+                    for (int k = 0; k < orderX; k++)
                     {
-                        square[i, k] = lst[index] % _order;
+                        latinRect[i, k] = lst[index] % orderMax;
                         index++;
                     }
                 }
-                ChangeSquare(this.customMap, isFormat: true);
+                ChangeRect(this.customMap, isFormat: true);
             }
 
-            public int[,] FuckAs2DArray() => square;
+            public int[,] As2DArray() => latinRect;
 
-            public bool IsFuckable()
+            public bool IsValid()
             {
                 var temp = new List<int>();
-                for (int i = 0; i < _order; i++)
+                for (int i = 0; i < orderY; i++)
                 {
-                    for (int k = 0; k < _order; k++) temp.Add(square[i, k]);
+                    for (int k = 0; k < orderX; k++) temp.Add(latinRect[i, k]);
                     if (!temp.SequenceEqual(temp.Distinct())) return false;
                     temp.Clear();
                 }
 
-                for (int i = 0; i < _order; i++)
+                for (int i = 0; i < orderX; i++)
                 {
-                    for (int k = 0; k < _order; k++) temp.Add(square[k, i]);
+                    for (int k = 0; k < orderY; k++) temp.Add(latinRect[k, i]);
                     if (!temp.SequenceEqual(temp.Distinct())) return false;
                     temp.Clear();
                 }
@@ -104,87 +108,89 @@ namespace Curse_Lab
                 return true;
             }
 
-            public bool IsDiaFuckable()
+            public bool IsDiaValid()
             {
                 var temp = new List<int>();
-                for (int i = 0; i < _order; i++) temp.Add(square[i, i]);
+                var ordMin = orderX > orderY ? orderY : orderX;
+                for (int i = 0; i < ordMin; i++) temp.Add(latinRect[i, i]);
                 if (!temp.SequenceEqual(temp.Distinct())) return false;
                 temp.Clear();
 
-                for (int i = 0; i < _order; i++) temp.Add(square[i, _order - i - 1]);
+                for (int i = 0; i < ordMin; i++) temp.Add(latinRect[i, ordMin - i - 1]);
                 if (!temp.SequenceEqual(temp.Distinct())) return false;
                 temp.Clear();
 
                 return true;
             }
-            public string UnfuckAsPlainText(bool formated = false)
+            public string AsPlainText(bool formated = false)
             {
                 var mess = string.Empty;
-                for (int i = 0; i < _order; i++)
+                for (int i = 0; i < orderY; i++)
                 {
-                    for (int k = 0; k < _order; k++)
+                    for (int k = 0; k < orderX; k++)
                     {
-                        mess += formated ? $"{formatedSquare[i, k]} " : $"{square[i, k]} ";
+                        mess += formated ? $"{formatedRect[i, k]} " : $"{latinRect[i, k]} ";
                     }
                     mess += '\n';
                 }
                 return mess;
             }
 
-            public void ReFuck(char[] map)
+            public void Format(char[] map)
             {
                 customMap = map;
-                ChangeSquare(map, isFormat: true);
+                ChangeRect(map, isFormat: true);
             }
 
-            private void ChangeSquare(char[] map, bool isFormat = false)
+            private void ChangeRect(char[] map, bool isFormat = false)
             {
-                for (int i = 0; i < _order; i++)
+                for (int i = 0; i < orderY; i++)
                 {
-                    for (int k = 0; k < _order; k++)
+                    for (int k = 0; k < orderX; k++)
                     {
-                        if (isFormat) formatedSquare[i, k] = map[square[i, k]];
-                        else square[i, k] = map[square[i, k]];
+                        if (isFormat) formatedRect[i, k] = map[latinRect[i, k]];
+                        else latinRect[i, k] = map[latinRect[i, k]];
                     }
                 }
             }
-            public void DoNormalFucking()
+            public void Normalize()
             {
-                var normMap = new char[_order];
-                for (int i = 0; i < _order; i++) normMap[square[0, i]] = (char)i;
-                ChangeSquare(normMap);
-                ChangeSquare(customMap, isFormat: true);
+                var normMap = new char[orderMax];
+                for (int i = 0; i < orderX; i++) normMap[latinRect[0, i]] = (char)i;
+                ChangeRect(normMap);
+                ChangeRect(customMap, isFormat: true);
             }
-            public void SwapFuckers(bool isColumn, int first, int second)
+            public void Swap(bool isColumn, int first, int second)
             {
                 if (isColumn)
                 {
-                    for (int i = 0; i < _order; i++)
+                    for (int i = 0; i < orderY; i++)
                     {
-                        (square[i, first], square[i, second]) = (square[i, second], square[i, first]);
+                        (latinRect[i, first], latinRect[i, second]) = (latinRect[i, second], latinRect[i, first]);
                     }
                 }
                 else
                 {
-                    for (int i = 0; i < _order; i++)
+                    for (int i = 0; i < orderX; i++)
                     {
-                        (square[first, i], square[second, i]) = (square[second, i], square[first, i]);
+                        (latinRect[first, i], latinRect[second, i]) = (latinRect[second, i], latinRect[first, i]);
                     }
                 }
-                ChangeSquare(customMap, isFormat: true);
+                ChangeRect(customMap, isFormat: true);
             }
-            public static bool IsFuckableList(in List<int> lst, int order)
+            public static bool IsListValid(in List<int> lst, in int orderX, in int orderY)
             {
                 var temp = new List<int>();
-                for (int k = 0; k < order; k++)
+                var orderMax = orderY > orderX ? orderY : orderX;
+                for (int k = 0; k < orderY; k++)
                 {
-                    for (int i = k; i < lst.Count; i += order) temp.Add(lst[i] % order);
+                    for (int i = k; i < lst.Count; i += orderX) temp.Add(lst[i] % orderMax);
                     if (IsContainsSame(temp)) return false;
                     temp.Clear();
                 }
-                for (int k = 0; k < lst.Count; k += order)
+                for (int k = 0; k < lst.Count; k += orderX)
                 {
-                    for (int i = k; i < k + order; i++) temp.Add(lst[i] % order);
+                    for (int i = k; i < k + orderX; i++) temp.Add(lst[i] % orderMax);
                     if (IsContainsSame(temp)) return false;
                     temp.Clear();
                 }
@@ -200,10 +206,10 @@ namespace Curse_Lab
                 }
                 return false;
             }
-            public string UnfuckString()
+            public string GetString()
             {
                 var str = string.Empty;
-                foreach (var item in square) str += item;
+                foreach (var item in latinRect) str += item;
                 return str;
             }
         }
@@ -212,40 +218,31 @@ namespace Curse_Lab
         public MainWindow()
         {
             InitializeComponent();
-
-            var fuck = new FuckingSquare(3, new char[] { '1', '2', '3' });
-            fuck.FuckFromString("102.021.210");
-            Fucker.Text = fuck.UnfuckAsPlainText(formated: false);
-            fuck.ReFuck(new char[] { 'ḁ', 'ḅ', 'ḉ' });
-            Fucker.Text += '\n' + fuck.UnfuckAsPlainText(formated: true);
-            int[,] fknArray;
-            if (fuck.IsFuckable()) fknArray = fuck.FuckAs2DArray();
-            fuck.DoNormalFucking();
-            Fucker.Text += '\n' + fuck.UnfuckAsPlainText(formated: true);
-            Fucker.Text += fuck.IsFuckable() ? "\nFS true" : "\nFS false";
-            Fucker.Text += fuck.IsDiaFuckable() ? "    DFS true\n" : "   DFS false\n";
-            fuck.SwapFuckers(isColumn: true, 0, 1);
-            Fucker.Text += '\n' + fuck.UnfuckAsPlainText(formated: true);
-
-            var order = 3;
-            var perm = new List<int>();
-            for (int i = 0; i < order * order; i++) perm.Add(i);
-            var squares = new List<string>();
-            while (NarPermut.NextOrFalse(ref perm))
-            {
-                if (FuckingSquare.IsFuckableList(perm, order))
-                {
-                    var fuckNew = new FuckingSquare(order);
-                    fuckNew.FuckFromList(perm);
-                    if (!squares.Contains(fuckNew.UnfuckString()))
-                    {
-                        Fucker.Text += '\n' + fuckNew.UnfuckAsPlainText(formated: false);
-                        squares.Add(fuckNew.UnfuckString());
-                        MessageBox.Show(fuckNew.UnfuckAsPlainText());
-                    }
-                }
-            }
-            Fucker.Text += $"всего:{squares.Count}";
+            var rect = new LatinRectangle(3, 2,new char[] {'a','b','c'});
+            rect.RectFromString("012,120");
+            rect.Swap(isColumn: false, 0, 1);
+            rect.Normalize();
+            var mess = $"{LatinRectangle.IsListValid(new List<int> { 0, 1, 2, 1, 2, 1 }, 3, 2)}";
+            MessageBox.Show(rect.AsPlainText(formated:true)+$"\n{rect.IsValid()}\n{rect.IsDiaValid()}\n{mess}");
+            //var order = 3;
+            //var perm = new List<int>();
+            //for (int i = 0; i < order * order; i++) perm.Add(i);
+            //var squares = new List<string>();
+            //while (NarPermut.NextOrFalse(ref perm))
+            //{
+            //    if (LatinRectangle.IsFuckableList(perm, order))
+            //    {
+            //        var fuckNew = new LatinRectangle(order,order);
+            //        fuckNew.RectFromList(perm);
+            //        if (!squares.Contains(fuckNew.UnfuckString()))
+            //        {
+            //            Fucker.Text += '\n' + fuckNew.UnfuckAsPlainText(formated: false);
+            //            squares.Add(fuckNew.UnfuckString());
+            //            MessageBox.Show(fuckNew.UnfuckAsPlainText());
+            //        }
+            //    }
+            //}
+            //Fucker.Text += $"всего:{squares.Count}";
         }
 
     }
