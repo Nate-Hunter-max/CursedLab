@@ -44,7 +44,7 @@ namespace Curse_Lab {
         
         #line 16 "..\..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox Fucker;
+        internal System.Windows.Controls.TextBox TextBlock;
         
         #line default
         #line hidden
@@ -80,7 +80,7 @@ namespace Curse_Lab {
             switch (connectionId)
             {
             case 1:
-            this.Fucker = ((System.Windows.Controls.TextBox)(target));
+            this.TextBlock = ((System.Windows.Controls.TextBox)(target));
             return;
             }
             this._contentLoaded = true;

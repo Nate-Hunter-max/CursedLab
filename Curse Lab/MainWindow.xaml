@@ -13,6 +13,6 @@
             <ColumnDefinition Width="53*"/>
             <ColumnDefinition Width="297*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="Fucker" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="24" FontFamily="Arial" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible" Height="564" Grid.ColumnSpan="2" Width="280"/>
+        <TextBox x:Name="TextBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="24" FontFamily="Arial" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible" Height="564" Grid.ColumnSpan="2" Width="280"/>
     </Grid>
 </Window>
