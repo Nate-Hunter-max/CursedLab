@@ -19,3 +19,7 @@ C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование
 C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Curse Lab.pdb
 C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Curse Lab.genruntimeconfig.cache
 C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\refint\Curse Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\App.baml
+C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Curse Lab.csproj.CopyComplete

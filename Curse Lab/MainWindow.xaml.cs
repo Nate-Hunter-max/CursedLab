@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Input;
 
 namespace Curse_Lab
 {
@@ -11,6 +12,15 @@ namespace Curse_Lab
         public MainWindow()
         {
             InitializeComponent();
+            Header.MouseDown += (s, a) => DragMove(s, a);
+
+            void DragMove(object sender, MouseButtonEventArgs e) 
+            { 
+                if (e.ChangedButton == MouseButton.Left) this.DragMove(); 
+            }
+
+            Cross.MouseDown += (s, a) => { Close(); };
+
 
             var orderX = 4;
             var orderY = 3;
@@ -26,13 +36,12 @@ namespace Curse_Lab
                     if (!rectange.IsNormalRow()) break;
                     if (rectange.IsNormalColumn() && !rectList.Contains(rectange.GetString()))
                     {
-                        TextBlock.Text += '\n' + rectange.AsPlainText(formated: false);
+                        //TextBlock.Text += '\n' + rectange.AsPlainText(formated: false);
                         rectList.Add(rectange.GetString());
-                        MessageBox.Show(rectange.AsPlainText());
                     }
                 }
             }
-            MessageBox.Show($"Всего {rectList.Count}");
+            //TextBlockAll.Text = $"Всего {rectList.Count}";
         }
 
     }

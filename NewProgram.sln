@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deleter", "Lab13\Deleter.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curse Lab", "Curse Lab\Curse Lab.csproj", "{449963BD-A503-44FD-9781-9F6F413D3123}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{7FBE40D7-6AC0-4C54-844D-419C9D9F0044}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,12 +26,6 @@ Global
 		{449963BD-A503-44FD-9781-9F6F413D3123}.Publish|Any CPU.Build.0 = Debug|Any CPU
 		{449963BD-A503-44FD-9781-9F6F413D3123}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{449963BD-A503-44FD-9781-9F6F413D3123}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7FBE40D7-6AC0-4C54-844D-419C9D9F0044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FBE40D7-6AC0-4C54-844D-419C9D9F0044}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FBE40D7-6AC0-4C54-844D-419C9D9F0044}.Publish|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FBE40D7-6AC0-4C54-844D-419C9D9F0044}.Publish|Any CPU.Build.0 = Debug|Any CPU
-		{7FBE40D7-6AC0-4C54-844D-419C9D9F0044}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FBE40D7-6AC0-4C54-844D-419C9D9F0044}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
