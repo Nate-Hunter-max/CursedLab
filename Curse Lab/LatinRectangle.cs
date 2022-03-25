@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Shapes;
 
 namespace Curse_Lab
 {
@@ -189,6 +193,81 @@ namespace Curse_Lab
             var str = string.Empty;
             foreach (var item in latinRect) str += item;
             return str;
+        }
+
+        public void PlaceToCanvas(Canvas CnvRect)
+        {
+            var ordMax = Math.Max(orderX, orderY);
+            var scale = orderX > orderY ? 400 / orderX : 400 / orderY;
+            var width = orderX * scale;
+            var height = orderY * scale;
+            var rectStyle = Application.Current.FindResource("RectStyle") as Style;
+            var rectLineStyle = Application.Current.FindResource("LineRectStyle") as Style;
+            var txtStyle = Application.Current.FindResource("TxtParams") as Style;
+            var lineThickness = scale / 50 > 0 ? scale / 50 : 1;
+
+            CnvRect.Children.Clear();
+            CnvRect.Children.Add(new Rectangle()
+            {
+                Width = width,
+                StrokeThickness = lineThickness,
+                Height = height,
+                RenderTransform = new TranslateTransform(-width / 2, -height / 2),
+                Style = rectStyle
+            });
+
+            AddLines(orderX, true);
+            AddLines(orderY, false);
+            AddText();
+
+            void AddLines(int ord, bool isVert)
+            {
+                for (int i = 1; i < ord; i++)
+                    CnvRect.Children.Add(new Line()
+                    {
+                        RenderTransform = new TranslateTransform(-width / 2, -height / 2),
+                        Style = rectLineStyle,
+                        StrokeThickness = lineThickness,
+                        X1 = isVert ? i * scale : 10,
+                        X2 = isVert ? i * scale : width - 10,
+                        Y1 = !isVert ? i * scale : 10,
+                        Y2 = !isVert ? i * scale : height - 10,
+                    });
+            }
+            void AddText()
+            {
+                var colors = new List<Color>();
+                var brush = Application.Current.FindResource("Accent") as SolidColorBrush ?? new SolidColorBrush();
+                var range = 60;
+                for (int i = -range; i < range; i += range * 2 / ordMax)
+                {
+                    colors.Add(new Color()
+                    {
+                        A = 255,
+                        R = brush.Color.R,
+                        G = (byte)(brush.Color.G + i),
+                        B = brush.Color.B
+                    }); ;
+                }
+                for (int i = 0; i < orderX; i++)
+                {
+                    for (int k = 0; k < orderY; k++)
+                    {
+                        CnvRect.Children.Add(new TextBlock()
+                        {
+                            RenderTransform = new TranslateTransform(
+                                -width / 2 + (width / (orderX * 2) - 40 / ordMax) + i * (width / orderX),
+                                -height / 2 + (height / (orderY * 2) - 80 / ordMax) + k * (height / orderY)),
+
+                            Text = latinRect[k, i].ToString(),
+                            Foreground = new SolidColorBrush(colors[latinRect[k, i]]),
+                            FontFamily = new FontFamily("Calibri"),
+                            FontSize = 160 / ordMax,
+                            Style = txtStyle,
+                        });
+                    }
+                }
+            }
         }
     }
 }

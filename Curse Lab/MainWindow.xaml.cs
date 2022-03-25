@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace Curse_Lab
 {
@@ -12,37 +13,48 @@ namespace Curse_Lab
         public MainWindow()
         {
             InitializeComponent();
-            Header.MouseDown += (s, a) => DragMove(s, a);
 
-            void DragMove(object sender, MouseButtonEventArgs e) 
-            { 
-                if (e.ChangedButton == MouseButton.Left) this.DragMove(); 
-            }
+            var clickTimes = 0;
 
             Cross.MouseDown += (s, a) => { Close(); };
+            Header.MouseDown += (s, a) => DragMove(s, a);
+            StartButton.MouseDown += (s, a) => StartSearch(s, a);
 
 
-            var orderX = 4;
-            var orderY = 3;
-            var permList = new List<int>();
-            for (int i = 0; i < orderX * orderY; i++) permList.Add(i);
-            var rectList = new List<string>();
-            while (NarPermut.NextOrFalse(ref permList))
+            void StartSearch(object sender, MouseButtonEventArgs e)
             {
-                if (LatinRectangle.IsListValid(permList, orderX, orderY))
+                clickTimes++;
+                var orderX = int.Parse(OrdX.Text);
+                var orderY = int.Parse(OrdY.Text);
+                var permList = new List<int>();
+                for (int i = 0; i < orderX * orderY; i++) permList.Add(i);
+                var rectList = new List<string>();
+                var rectangList = new List<LatinRectangle>();
+                while (NarPermut.NextOrFalse(ref permList))
                 {
-                    var rectange = new LatinRectangle(orderX, orderY);
-                    rectange.RectFromList(permList);
-                    if (!rectange.IsNormalRow()) break;
-                    if (rectange.IsNormalColumn() && !rectList.Contains(rectange.GetString()))
+                    if (LatinRectangle.IsListValid(permList, orderX, orderY))
                     {
-                        //TextBlock.Text += '\n' + rectange.AsPlainText(formated: false);
-                        rectList.Add(rectange.GetString());
+                        var rectangle = new LatinRectangle(orderX, orderY);
+                        rectangle.RectFromList(permList);
+                        if (!rectangle.IsNormalRow()) break;
+                        if (rectangle.IsNormalColumn() && !rectList.Contains(rectangle.GetString()))
+                        {
+                            rectList.Add(rectangle.GetString());
+                            rectangle.PlaceToCanvas(CnvRect);
+                            break;
+                        }
                     }
                 }
             }
-            //TextBlockAll.Text = $"Всего {rectList.Count}";
+
+
+            var foo = FindResource("Accent") as SolidColorBrush;
+            void DragMove(object sender, MouseButtonEventArgs e)
+            {
+                if (e.ChangedButton == MouseButton.Left) this.DragMove();
+            }
         }
 
     }
+
 }

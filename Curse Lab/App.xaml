@@ -9,8 +9,34 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml"/>
+                <ResourceDictionary x:Name="Colors" Source="Colors.xaml"></ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="RectStyle" TargetType="Rectangle">
+                <Setter Property="Fill" Value="{StaticResource BgRect}"></Setter>
+                <Setter Property="Stroke" Value="{StaticResource DashRect}"></Setter>
+                <Setter Property="StrokeThickness" Value="7"></Setter>
+                <Setter Property="StrokeDashCap" Value="Round"></Setter>
+                <Setter Property="StrokeDashArray" Value="3"></Setter>
+                <Setter Property="StrokeThickness" Value="7"></Setter>
+                <Setter Property="RadiusX" Value="10"></Setter>
+                <Setter Property="RadiusY" Value="10"></Setter>
+            </Style>
+            <Style x:Key="LineRectStyle" TargetType="Line">
+                <Setter Property="StrokeDashCap" Value="Round"></Setter>
+                <Setter Property="StrokeEndLineCap" Value="Round"></Setter>
+                <Setter Property="StrokeStartLineCap" Value="Round"></Setter>
+                <Setter Property="StrokeDashArray" Value="3"></Setter>
+                <Setter Property="Stroke" Value="{StaticResource DashRect}"></Setter>
+                <Setter Property="StrokeThickness" Value="7"></Setter>
+            </Style>
+            <Style x:Key="TxtParams" TargetType="TextBlock">
+                <Setter Property="Foreground" Value="{StaticResource FgMain}"></Setter>
+                <Setter Property="FontFamily" Value="Calibri Light"></Setter>
+                <Setter Property="FontSize" Value="22"></Setter>
+                <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
