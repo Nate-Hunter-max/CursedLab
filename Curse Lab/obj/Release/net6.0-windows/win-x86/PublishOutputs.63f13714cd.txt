@@ -1,0 +1,7 @@
+C:\Users\oppp0\OneDrive\Рабочий стол\Cursed1\Curse Lab.pdb
+C:\Users\oppp0\OneDrive\Рабочий стол\Cursed1\D3DCompiler_47_cor3.dll
+C:\Users\oppp0\OneDrive\Рабочий стол\Cursed1\PenImc_cor3.dll
+C:\Users\oppp0\OneDrive\Рабочий стол\Cursed1\PresentationNative_cor3.dll
+C:\Users\oppp0\OneDrive\Рабочий стол\Cursed1\vcruntime140_cor3.dll
+C:\Users\oppp0\OneDrive\Рабочий стол\Cursed1\wpfgfx_cor3.dll
+C:\Users\oppp0\OneDrive\Рабочий стол\Cursed1\Curse Lab.exe

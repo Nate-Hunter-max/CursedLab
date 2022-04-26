@@ -34,6 +34,17 @@ namespace Curse_Lab
         {
             this.customMap = customMap;
         }
+        public LatinRectangle(int[,] arr)
+        {
+            orderX = arr.GetLength(1);
+            orderY = arr.GetLength(0);
+            orderMax = orderX >= orderY ? orderX : orderY;
+            latinRect = new int[orderY, orderX];
+            formatedRect = new char[orderY, orderX];
+            customMap = new char[orderMax];
+            for (int i = 0; i < orderMax; i++) customMap[i] = (char)(i + 1);
+            RectFrom2DArray(arr);
+        }
         public void RectFromString(string str)
         {
             str = Regex.Replace(str, @"\D+", "");
@@ -42,6 +53,12 @@ namespace Curse_Lab
             RectFromList(list);
         }
 
+        public void RectFrom2DArray(in int[,] arr)
+        {
+            var lst = new List<int>();
+            foreach (int i in arr) lst.Add(i);
+            RectFromList(lst);
+        }
         public void RectFromList(in List<int> lst)
         {
             int index = 0;
@@ -49,11 +66,11 @@ namespace Curse_Lab
             {
                 for (int k = 0; k < orderX; k++)
                 {
-                    latinRect[i, k] = lst[index] % orderMax;
+                    latinRect[i, k] = lst[index];
                     index++;
                 }
             }
-            ChangeRect(this.customMap, isFormat: true);
+            ChangeRect(customMap, isFormat: true);
         }
 
         public int[,] As2DArray() => latinRect;
@@ -78,7 +95,7 @@ namespace Curse_Lab
             return true;
         }
 
-        public bool IsDiaValid()
+        public bool IsDiagonal()
         {
             var temp = new List<int>();
             var ordMin = orderX > orderY ? orderY : orderX;
@@ -131,13 +148,9 @@ namespace Curse_Lab
             ChangeRect(normMap);
             ChangeRect(customMap, isFormat: true);
         }
-        public bool IsNormalRow()
+        public bool IsNormal()
         {
             for (int i = 0; i < orderX - 1; i++) if (latinRect[0, i] > latinRect[0, i + 1]) return false;
-            return true;
-        }
-        public bool IsNormalColumn()
-        {
             for (int i = 0; i < orderY - 1; i++) if (latinRect[i, 0] > latinRect[i + 1, 0]) return false;
             return true;
         }
@@ -160,34 +173,7 @@ namespace Curse_Lab
             }
             ChangeRect(customMap, isFormat: true);
         }
-        public static bool IsListValid(in List<int> lst, in int orderX, in int orderY)
-        {
-            var temp = new List<int>();
-            var orderMax = orderY > orderX ? orderY : orderX;
-            for (int k = 0; k < orderX; k++)
-            {
-                for (int i = k; i < lst.Count; i += orderX) temp.Add(lst[i] % orderMax);
-                if (IsContainsSame(temp)) return false;
-                temp.Clear();
-            }
-            for (int k = 0; k < lst.Count; k += orderX)
-            {
-                for (int i = k; i < k + orderX; i++) temp.Add(lst[i] % orderMax);
-                if (IsContainsSame(temp)) return false;
-                temp.Clear();
-            }
-            return true;
-        }
 
-        private static bool IsContainsSame(List<int> lst)
-        {
-            for (int i = 0; i < lst.Count; i++)
-            {
-                for (int k = i + 1; k < lst.Count; k++)
-                    if (lst[k] == lst[i]) return true;
-            }
-            return false;
-        }
         public string GetString()
         {
             var str = string.Empty;

@@ -37,6 +37,12 @@
                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
             </Style>
+            <Style x:Key="LineStyle" TargetType="Line">
+                <Setter Property="StrokeEndLineCap" Value="Round"></Setter>
+                <Setter Property="StrokeStartLineCap" Value="Round"></Setter>
+                <Setter Property="StrokeThickness" Value="2.5"></Setter>
+                <Setter Property="Stroke" Value="{StaticResource Accent}"></Setter>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

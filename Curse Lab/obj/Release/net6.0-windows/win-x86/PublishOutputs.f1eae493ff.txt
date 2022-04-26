@@ -1,0 +1,7 @@
+E:\Labs\Curse\Curse Lab.exe
+E:\Labs\Curse\Curse Lab.dll
+E:\Labs\Curse\Curse Lab.deps.json
+E:\Labs\Curse\Curse Lab.runtimeconfig.json
+E:\Labs\Curse\Curse Lab.pdb
+E:\Labs\Curse\MaterialDesignColors.dll
+E:\Labs\Curse\MaterialDesignThemes.Wpf.dll

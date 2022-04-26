@@ -1,0 +1,7 @@
+E:\Labs\Cursed\Curse Lab.pdb
+E:\Labs\Cursed\D3DCompiler_47_cor3.dll
+E:\Labs\Cursed\PenImc_cor3.dll
+E:\Labs\Cursed\PresentationNative_cor3.dll
+E:\Labs\Cursed\vcruntime140_cor3.dll
+E:\Labs\Cursed\wpfgfx_cor3.dll
+E:\Labs\Cursed\Curse Lab.exe
