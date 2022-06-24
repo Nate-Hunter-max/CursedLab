@@ -1,192 +1,70 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace Curse_Lab
+namespace Cursed_Lab
 {
     public class LatinRectangle
     {
-        readonly int orderX;
-        readonly int orderY;
-        readonly int orderMax;
+        public int OrderX { get; }
+        public int OrderY { get; }
+        public int OrderMax { get; }
+        public int[,] LatinRect { get; }
 
-
-        int[,] latinRect;
-        char[,] formatedRect;
-        char[] customMap;
-
-        public LatinRectangle(int orderX, int orderY)
-        {
-            this.orderX = orderX;
-            this.orderY = orderY;
-            latinRect = new int[orderY, orderX];
-            formatedRect = new char[orderY, orderX];
-            orderMax = orderX >= orderY ? orderX : orderY;
-            customMap = new char[orderMax];
-            for (int i = 0; i < orderMax; i++) customMap[i] = (char)(i + 1);
-        }
-        public LatinRectangle(int orderX, int orderY, char[] customMap) : this(orderX, orderY)
-        {
-            this.customMap = customMap;
-        }
         public LatinRectangle(int[,] arr)
         {
-            orderX = arr.GetLength(1);
-            orderY = arr.GetLength(0);
-            orderMax = orderX >= orderY ? orderX : orderY;
-            latinRect = new int[orderY, orderX];
-            formatedRect = new char[orderY, orderX];
-            customMap = new char[orderMax];
-            for (int i = 0; i < orderMax; i++) customMap[i] = (char)(i + 1);
-            RectFrom2DArray(arr);
-        }
-        public void RectFromString(string str)
-        {
-            str = Regex.Replace(str, @"\D+", "");
-            var list = new List<int>();
-            foreach (char c in str) list.Add(int.Parse(c.ToString()));
-            RectFromList(list);
+            OrderX = arr.GetLength(1);
+            OrderY = arr.GetLength(0);
+            OrderMax = OrderX >= OrderY ? OrderX : OrderY;
+            LatinRect = new int[OrderY, OrderX];
+            for (int i = 0; i < OrderY; i++) for (int k = 0; k < OrderX; k++) LatinRect[i, k] = arr[i, k];
         }
 
-        public void RectFrom2DArray(in int[,] arr)
-        {
-            var lst = new List<int>();
-            foreach (int i in arr) lst.Add(i);
-            RectFromList(lst);
-        }
-        public void RectFromList(in List<int> lst)
-        {
-            int index = 0;
-            for (int i = 0; i < orderY; i++)
-            {
-                for (int k = 0; k < orderX; k++)
-                {
-                    latinRect[i, k] = lst[index];
-                    index++;
-                }
-            }
-            ChangeRect(customMap, isFormat: true);
-        }
-
-        public int[,] As2DArray() => latinRect;
-
-        public bool IsValid()
-        {
-            var temp = new List<int>();
-            for (int i = 0; i < orderY; i++)
-            {
-                for (int k = 0; k < orderX; k++) temp.Add(latinRect[i, k]);
-                if (!temp.SequenceEqual(temp.Distinct())) return false;
-                temp.Clear();
-            }
-
-            for (int i = 0; i < orderX; i++)
-            {
-                for (int k = 0; k < orderY; k++) temp.Add(latinRect[k, i]);
-                if (!temp.SequenceEqual(temp.Distinct())) return false;
-                temp.Clear();
-            }
-
-            return true;
-        }
 
         public bool IsDiagonal()
         {
             var temp = new List<int>();
-            var ordMin = orderX > orderY ? orderY : orderX;
-            for (int i = 0; i < ordMin; i++) temp.Add(latinRect[i, i]);
+            var ordMin = OrderX > OrderY ? OrderY : OrderX;
+            for (int i = 0; i < ordMin; i++) temp.Add(LatinRect[i, i]);
             if (!temp.SequenceEqual(temp.Distinct())) return false;
             temp.Clear();
 
-            for (int i = 0; i < ordMin; i++) temp.Add(latinRect[i, ordMin - i - 1]);
+            for (int i = 0; i < ordMin; i++) temp.Add(LatinRect[i, ordMin - i - 1]);
             if (!temp.SequenceEqual(temp.Distinct())) return false;
             temp.Clear();
 
             return true;
         }
-        public string AsPlainText(bool formated = false)
+        public string AsPlainText()
         {
             var mess = string.Empty;
-            for (int i = 0; i < orderY; i++)
+            for (int i = 0; i < OrderY; i++)
             {
-                for (int k = 0; k < orderX; k++)
+                for (int k = 0; k < OrderX; k++)
                 {
-                    mess += formated ? $"{formatedRect[i, k]} " : $"{latinRect[i, k]} ";
+                    mess += $"{LatinRect[i, k]} ";
                 }
                 mess += '\n';
             }
             return mess;
         }
-
-        public void Format(char[] map)
-        {
-            if (map.Length != orderMax) throw new ArgumentException("Invalid map");
-            customMap = map;
-            ChangeRect(map, isFormat: true);
-        }
-
-        private void ChangeRect(char[] map, bool isFormat = false)
-        {
-            for (int i = 0; i < orderY; i++)
-            {
-                for (int k = 0; k < orderX; k++)
-                {
-                    if (isFormat) formatedRect[i, k] = map[latinRect[i, k]];
-                    else latinRect[i, k] = map[latinRect[i, k]];
-                }
-            }
-        }
-        public void Normalize()
-        {
-            var normMap = new char[orderMax];
-            for (int i = 0; i < orderX; i++) normMap[latinRect[0, i]] = (char)i;
-            ChangeRect(normMap);
-            ChangeRect(customMap, isFormat: true);
-        }
         public bool IsNormal()
         {
-            for (int i = 0; i < orderX - 1; i++) if (latinRect[0, i] > latinRect[0, i + 1]) return false;
-            for (int i = 0; i < orderY - 1; i++) if (latinRect[i, 0] > latinRect[i + 1, 0]) return false;
+            for (int i = 0; i < OrderX - 1; i++) if (LatinRect[0, i] > LatinRect[0, i + 1]) return false;
+            for (int i = 0; i < OrderY - 1; i++) if (LatinRect[i, 0] > LatinRect[i + 1, 0]) return false;
             return true;
-        }
-
-        public void Swap(bool isColumn, int first, int second)
-        {
-            if (isColumn)
-            {
-                for (int i = 0; i < orderY; i++)
-                {
-                    (latinRect[i, first], latinRect[i, second]) = (latinRect[i, second], latinRect[i, first]);
-                }
-            }
-            else
-            {
-                for (int i = 0; i < orderX; i++)
-                {
-                    (latinRect[first, i], latinRect[second, i]) = (latinRect[second, i], latinRect[first, i]);
-                }
-            }
-            ChangeRect(customMap, isFormat: true);
-        }
-
-        public string GetString()
-        {
-            var str = string.Empty;
-            foreach (var item in latinRect) str += item;
-            return str;
         }
 
         public void PlaceToCanvas(Canvas CnvRect)
         {
-            var ordMax = Math.Max(orderX, orderY);
-            var scale = orderX > orderY ? 400 / orderX : 400 / orderY;
-            var width = orderX * scale;
-            var height = orderY * scale;
+            var ordMax = Math.Max(OrderX, OrderY);
+            var scale = OrderX > OrderY ? 400 / OrderX : 400 / OrderY;
+            var width = OrderX * scale;
+            var height = OrderY * scale;
             var rectStyle = Application.Current.FindResource("RectStyle") as Style;
             var rectLineStyle = Application.Current.FindResource("LineRectStyle") as Style;
             var txtStyle = Application.Current.FindResource("TxtParams") as Style;
@@ -202,8 +80,8 @@ namespace Curse_Lab
                 Style = rectStyle
             });
 
-            AddLines(orderX, true);
-            AddLines(orderY, false);
+            AddLines(OrderX, true);
+            AddLines(OrderY, false);
             AddText();
 
             void AddLines(int ord, bool isVert)
@@ -235,18 +113,17 @@ namespace Curse_Lab
                         B = brush.Color.B
                     }); ;
                 }
-                for (int i = 0; i < orderX; i++)
+                for (int i = 0; i < OrderX; i++)
                 {
-                    for (int k = 0; k < orderY; k++)
+                    for (int k = 0; k < OrderY; k++)
                     {
                         CnvRect.Children.Add(new TextBlock()
                         {
                             RenderTransform = new TranslateTransform(
-                                -width / 2 + (width / (orderX * 2) - 40 / ordMax) + i * (width / orderX),
-                                -height / 2 + (height / (orderY * 2) - 80 / ordMax) + k * (height / orderY)),
-
-                            Text = latinRect[k, i].ToString(),
-                            Foreground = new SolidColorBrush(colors[latinRect[k, i]]),
+                                -width / 2 + (width / (OrderX * 2) - 40 / ordMax) + i * (width / OrderX),
+                                -height / 2 + (height / (OrderY * 2) - 80 / ordMax) + k * (height / OrderY)),
+                            Text = LatinRect[k, i].ToString(),
+                            Foreground = new SolidColorBrush(colors[LatinRect[k, i]]),
                             FontFamily = new FontFamily("Calibri"),
                             FontSize = 160 / ordMax,
                             Style = txtStyle,

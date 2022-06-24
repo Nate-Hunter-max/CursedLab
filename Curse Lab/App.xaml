@@ -1,7 +1,7 @@
-﻿<Application x:Class="Curse_Lab.App"
+﻿<Application x:Class="Cursed_Lab.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Curse_Lab"
+             xmlns:local="clr-namespace:Cursed_Lab"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>

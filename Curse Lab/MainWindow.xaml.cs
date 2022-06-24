@@ -7,7 +7,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace Curse_Lab
+namespace Cursed_Lab
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -41,9 +41,9 @@ namespace Curse_Lab
             {
                 var outFile = new CsvWriter();
                 outFile.Append("[N, M]", "R(n)");
-                for (int i = 1; i < int.Parse(OrdX.Text)+1; i++)
+                for (int i = 1; i < int.Parse(OrdX.Text) + 1; i++)
                 {
-                    for (int k = 1; k < int.Parse(OrdX.Text)+1; k++)
+                    for (int k = 1; k < int.Parse(OrdX.Text) + 1; k++)
                     {
                         StartPressed(i, k, s);
                         outFile.Append($"[{i}, {k}]", RecObjList.Count.ToString());
@@ -115,7 +115,6 @@ namespace Curse_Lab
 
             void StartPressed(int orderX, int orderY, object sender, MouseButtonEventArgs? e = null)
             {
-
                 RecObjList.Clear();
                 currentIndex = -1;
                 int[,] temp = new int[orderY, orderX];
@@ -123,8 +122,6 @@ namespace Curse_Lab
                 FindAll(orderX, orderY, temp);
                 if (orderX == 1 || orderY == 1) foreach (var it in RecObjList.ToList()) if (!it.IsNormal()) RecObjList.Remove(it);
                 ChangeRect(RecObjList, true);
-
-
             }
             void FindAll(int ordX, int ordY, int[,] arr, int currX = 0, int currY = 0)
             {

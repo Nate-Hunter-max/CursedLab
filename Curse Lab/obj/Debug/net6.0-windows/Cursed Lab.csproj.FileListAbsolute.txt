@@ -1,0 +1,52 @@
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.exe
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.deps.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.runtimeconfig.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.csproj.AssemblyReference.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Colors.baml
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab_MarkupCompile.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab_MarkupCompile.lref
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\App.baml
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.g.resources
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.AssemblyInfoInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.AssemblyInfo.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.csproj.CoreCompileInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.csproj.CopyComplete
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\refint\Cursed Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.genruntimeconfig.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\NewProgram\Curse Lab\obj\Debug\net6.0-windows\ref\Cursed Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.exe
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.deps.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.runtimeconfig.json
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\bin\Debug\net6.0-windows\Cursed Lab.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.csproj.AssemblyReference.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Colors.baml
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab_MarkupCompile.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab_MarkupCompile.lref
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\App.baml
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.g.resources
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.AssemblyInfoInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.AssemblyInfo.cs
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.csproj.CoreCompileInputs.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.csproj.CopyComplete
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\refint\Cursed Lab.dll
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.pdb
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\Cursed Lab.genruntimeconfig.cache
+C:\Users\oppp0\OneDrive\Документы\SWSU\Code\C#\CursedLab\Curse Lab\obj\Debug\net6.0-windows\ref\Cursed Lab.dll

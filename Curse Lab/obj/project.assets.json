@@ -97,11 +97,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oppp0\\OneDrive\\Документы\\SWSU\\Программирование\\C#\\NewProgram\\Curse Lab\\Curse Lab.csproj",
-      "projectName": "Curse Lab",
-      "projectPath": "C:\\Users\\oppp0\\OneDrive\\Документы\\SWSU\\Программирование\\C#\\NewProgram\\Curse Lab\\Curse Lab.csproj",
+      "projectUniqueName": "C:\\Users\\oppp0\\OneDrive\\Документы\\SWSU\\Code\\C#\\CursedLab\\Curse Lab\\Cursed Lab.csproj",
+      "projectName": "Cursed Lab",
+      "projectPath": "C:\\Users\\oppp0\\OneDrive\\Документы\\SWSU\\Code\\C#\\CursedLab\\Curse Lab\\Cursed Lab.csproj",
       "packagesPath": "C:\\Users\\oppp0\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oppp0\\OneDrive\\Документы\\SWSU\\Программирование\\C#\\NewProgram\\Curse Lab\\obj\\",
+      "outputPath": "C:\\Users\\oppp0\\OneDrive\\Документы\\SWSU\\Code\\C#\\CursedLab\\Curse Lab\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -157,7 +157,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

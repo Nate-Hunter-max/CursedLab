@@ -1,17 +1,13 @@
 ﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Curse_Lab
+namespace Cursed_Lab
 {
     internal class CsvWriter
     {
         StreamWriter csvWriter;
-        public CsvWriter() {
+        public CsvWriter()
+        {
             var fd = new SaveFileDialog { Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*" };
             fd.ShowDialog();
             csvWriter = new StreamWriter(new FileStream(fd.FileName, FileMode.OpenOrCreate));

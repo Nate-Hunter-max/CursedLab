@@ -1,5 +1,0 @@
-C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\publish\Lab4.exe
-C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\publish\Lab4.dll
-C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\publish\Lab4.deps.json
-C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\publish\Lab4.runtimeconfig.json
-C:\Users\oppp0\OneDrive\Документы\SWSU\Программирование\C#\NewProgram\Lab4\bin\Release\net6.0\publish\Lab4.pdb

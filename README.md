@@ -1,2 +1,2 @@
 # NewProgram
-This is labs 1 course
+Cursed files from 1 course

@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Curse_Lab
+namespace Cursed_Lab
 {
     /// <summary>
     /// Interaction logic for App.xaml

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1biOgIj/YL2OVqfXkIpckumt64Pg4WNLdjF36t34upBVfOnsJWOR9QYFyX3I4fas2G8ubE9eHGBXxeoXCG8jdQ==",
+  "dgSpecHash": "xj8LCaiYI39XC4mYdiqX3jIFQNDI+nNb+H2hTDasdcspAZ5o+xQIuYZ9/duB6gR5RmOrnIk/+9/jNbdcKiIdFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oppp0\\OneDrive\\Документы\\SWSU\\Программирование\\C#\\NewProgram\\Curse Lab\\Curse Lab.csproj",
+  "projectFilePath": "C:\\Users\\oppp0\\OneDrive\\Документы\\SWSU\\Code\\C#\\CursedLab\\Curse Lab\\Cursed Lab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oppp0\\.nuget\\packages\\materialdesigncolors\\2.0.5\\materialdesigncolors.2.0.5.nupkg.sha512",
     "C:\\Users\\oppp0\\.nuget\\packages\\materialdesignthemes\\4.4.0\\materialdesignthemes.4.4.0.nupkg.sha512"
